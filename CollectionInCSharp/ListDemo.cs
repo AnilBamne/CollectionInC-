@@ -7,13 +7,13 @@ using System.Threading.Tasks;
 
 namespace CollectionInCSharp
 {
-    public class CollectionDemos
+    public class ListDemo
     {
         ///<summary>
         ///LIST
         ///creating a static method ListDemo,performing list operations 
         /// </summary>
-        public static void ListDemo()
+        public static void DoList()
         {
             ///<summary>
             ///creating a list of strings
@@ -33,7 +33,7 @@ namespace CollectionInCSharp
             {
                 Console.WriteLine(item);
             }
-
+            
             //list.Remove to remove elements from list 
             list.Remove("India");                           //removing by elements
             list.RemoveAt(3);                               //removing by element index
