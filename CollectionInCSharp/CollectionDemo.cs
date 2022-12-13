@@ -63,5 +63,29 @@ namespace CollectionInCSharp
             Console.WriteLine("\n Element at index=1 :");
             Console.WriteLine(set.ElementAt(1));
         }
+        //stores the elements in FIFO style (First In First Out)
+        public static void DoQueueDemo()  
+        {
+            Console.WriteLine("\nIn Queue Demo");
+            Queue<string> queue = new Queue<string>();
+            queue.Enqueue("Amit Shah");
+            queue.Enqueue("Narendra Modi");
+            queue.Enqueue("JaiShankar");
+            queue.Enqueue("Rajnath");
+            Console.WriteLine("Head:" + queue.Peek());
+            Console.WriteLine("\nIterating the queue elements:");
+            foreach (var elements in queue)
+            {
+                Console.WriteLine(elements);
+            }
+            string dequeue = queue.Dequeue();
+            Console.WriteLine("Deque element:" + dequeue);
+            Console.WriteLine("\nIterating the queue elements after deque one element:");
+            Queue<string>.Enumerator enumerator = queue.GetEnumerator();
+            while (enumerator.MoveNext())
+            {
+                Console.WriteLine(enumerator.Current);
+            }
+        }
     }
 }

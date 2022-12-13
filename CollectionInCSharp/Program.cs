@@ -8,7 +8,7 @@ namespace CollectionInCSharp
         {
             Console.WriteLine("Welcome to Collection");
             runAgain:
-            Console.WriteLine("\nSelect option to execute\n1:List\n2:Set\n");
+            Console.WriteLine("\nSelect option to execute\n1:List\n2:Set\n3:Queue\n4:Dictionary");
             int option=int.Parse(Console.ReadLine());
             switch (option)
             {
@@ -19,6 +19,7 @@ namespace CollectionInCSharp
                     CollectionDemo.doSetDemo();
                     break;
                 case 3:
+                    CollectionDemo.DoQueueDemo();
                     break;
             }
             goto runAgain;
