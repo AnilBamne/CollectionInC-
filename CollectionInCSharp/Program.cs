@@ -6,17 +6,17 @@ namespace CollectionInCSharp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to Collection\n");
+            Console.WriteLine("Welcome to Collection");
             runAgain:
             Console.WriteLine("\nSelect option to execute\n1:List\n2:Set\n");
             int option=int.Parse(Console.ReadLine());
             switch (option)
             {
                 case 1:
-                    ListDemo.DoList();
+                    CollectionDemo.DoList();
                     break;
                 case 2:
-                    SetDemo.doSetDemo();
+                    CollectionDemo.doSetDemo();
                     break;
                 case 3:
                     break;
