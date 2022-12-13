@@ -103,5 +103,20 @@ namespace CollectionInCSharp
             }
             Console.WriteLine("Poped Element: " + pop);
         }
+        //Dictionary is a generic collection which is generally used to store key/value pairs.
+        public static void DoDictionaryDemo()  
+        {
+            Console.WriteLine("In Do Dictionsry Demo");
+            Dictionary<int, string> dictionary = new Dictionary<int, string>();
+            dictionary.Add(100, "Soniya");
+            dictionary.Add(101, "Rahul");
+            dictionary.Add(102, "Kharge");
+            Console.WriteLine("Access value using key(key=100): " + dictionary[100]);
+            Console.WriteLine("\nIterating Dictionary: ");
+            foreach (var element in dictionary)
+            {
+                Console.WriteLine("Key =" + element.Key + " & value =" + element.Value);
+            }
+        }
     }
 }

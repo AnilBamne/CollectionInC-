@@ -25,6 +25,7 @@ namespace CollectionInCSharp
                     CollectionDemo.DoStackDemo();
                     break;
                 case 5:
+                    CollectionDemo.DoDictionaryDemo();
                     break;
             }
             goto runAgain;
