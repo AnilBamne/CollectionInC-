@@ -87,5 +87,21 @@ namespace CollectionInCSharp
                 Console.WriteLine(enumerator.Current);
             }
         }
+        public static void DoStackDemo()   //Stack represents a last-in, first out collection of object.
+        {
+            Console.WriteLine("\nIn Stack Demo");
+            Stack<string> stack = new Stack<string>();
+            stack.Push("Ayush");
+            stack.Push("Garvit");
+            stack.Push("Amit");
+            stack.Push("Ashish");
+            stack.Push("Garima");
+            string pop = stack.Pop();
+            foreach (var elements in stack)
+            {
+                Console.WriteLine(elements);
+            }
+            Console.WriteLine("Poped Element: " + pop);
+        }
     }
 }
